@@ -1,5 +1,5 @@
 import BasicStyle from './components/BasicStyles'
-import { DefaultButton } from './components/Button.js'
+import { DefaultButton, HispterButton } from './components/Button.js'
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <BasicStyle special>styled components</BasicStyle>
       <BasicStyle>styled components</BasicStyle>
       <DefaultButton>click me</DefaultButton>
+      <HispterButton>hispter button</HispterButton>
     </div>
   )
 }

@@ -12,3 +12,10 @@ export const DefaultButton = styled.button`
   width: 200px;
   margin: 1rem auto;
 `
+
+export const HispterButton = styled(DefaultButton)`
+  background-color: white;
+  width: 300px;
+  color: blue;
+  border: 1px solid blue;
+`
