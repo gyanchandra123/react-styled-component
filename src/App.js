@@ -1,13 +1,12 @@
-import BasicStyle from './components/BasicStyles'
-import { DefaultButton, HispterButton } from './components/Button.js'
+import styled from 'styled-components'
+import ComplexTitle from './components/ComplexTitle'
+import Random from './components/Random'
 
 function App() {
   return (
     <div style={{ padding: '2rem' }}>
-      <BasicStyle special>styled components</BasicStyle>
-      <BasicStyle>styled components</BasicStyle>
-      <DefaultButton>click me</DefaultButton>
-      <HispterButton>hispter button</HispterButton>
+      <ComplexTitle title='more complex title'></ComplexTitle>
+      <Random></Random>
     </div>
   )
 }
