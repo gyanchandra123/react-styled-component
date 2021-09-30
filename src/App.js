@@ -1,22 +1,5 @@
-import styled from 'styled-components'
-
-const BasicStyle = styled.h1`
-  text-align: center;
-  text-transform: uppercase;
-`
-
-const DefaultButton = styled.button`
-  background-color: blue;
-  border: none;
-  color: white;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  text-transform: capitalize;
-  padding: 0.25rem;
-  display: block;
-  width: 200px;
-  margin: 1rem auto;
-`
+import BasicStyle from './components/BasicStyles'
+import { DefaultButton } from './components/Button.js'
 
 function App() {
   return (
