@@ -4,8 +4,9 @@ import { DefaultButton } from './components/Button.js'
 function App() {
   return (
     <div style={{ padding: '2rem' }}>
-      <BasicStyle className='title'>styled components</BasicStyle>
-      <DefaultButton className='btn'>click me</DefaultButton>
+      <BasicStyle special>styled components</BasicStyle>
+      <BasicStyle>styled components</BasicStyle>
+      <DefaultButton>click me</DefaultButton>
     </div>
   )
 }
