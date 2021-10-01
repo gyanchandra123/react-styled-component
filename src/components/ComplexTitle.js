@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const ComplexTitle = (props) => {
   console.log('props value : ', props)
+
   return (
     <div className={props.className}>
       <h2>{props.title}</h2>
@@ -19,7 +20,7 @@ const Wrapper = styled(ComplexTitle)`
   div {
     height: 0.5rem;
     width: 0.5rem;
-    background: red;
+    background: var(--primary);
   }
 `
 
