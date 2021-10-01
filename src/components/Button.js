@@ -15,7 +15,13 @@ export const DefaultButton = styled.button`
 
 export const HispterButton = styled(DefaultButton)`
   background-color: white;
-  width: 300px;
+  width: 150px;
   color: blue;
   border: 1px solid blue;
+  padding: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
 `
