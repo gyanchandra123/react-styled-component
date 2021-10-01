@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from './util'
+import { colors, customBorder } from './util'
 
 const ComplexTitle = (props) => {
   console.log('props value : ', props)
@@ -8,7 +8,8 @@ const ComplexTitle = (props) => {
   return (
     <div className={props.className}>
       <h2>{props.title}</h2>
-      <div className='underline'></div>
+
+      <div className='box'>custom border applies here....</div>
     </div>
   )
 }
@@ -22,6 +23,13 @@ const Wrapper = styled(ComplexTitle)`
     height: 0.5rem;
     width: 0.5rem;
     background: ${colors};
+  }
+
+  .box {
+    height: 10px;
+    border: ${customBorder({ width: 3, style: 'solid', color: 'green' })};
+    width: auto;
+    padding: 10px;
   }
 `
 
