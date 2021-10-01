@@ -1,39 +1,13 @@
-import { useState } from 'react'
-
-import styled, { ThemeProvider } from 'styled-components'
-import GlobalStyle from './components/GlobalStyle'
-
-const BaseTheme = {
-  color: '#222',
-  background: '#fff',
-}
-const DarkTheme = {
-  color: '#fff',
-  background: '#222',
-}
-
-const Container = styled.div`
-  padding: 2rem;
-  color: ${(props) => props.theme.color};
-  background: ${(props) => props.theme.background};
-`
+import styled from 'styled-components'
+import ComplexTitle from './components/ComplexTitle'
+import Random from './components/Random'
+import Loading from './components/Loading'
 
 function App() {
-  const [baseTheme, setTheme] = useState(true)
-
-  const toggleTheme = () => {
-    setTheme(!baseTheme)
-  }
   return (
-    <ThemeProvider theme={baseTheme ? BaseTheme : DarkTheme}>
-      <GlobalStyle />
-      <Container>
-        <h1>hello world</h1>
-        <button className='btn' onClick={toggleTheme}>
-          toggle me
-        </button>
-      </Container>
-    </ThemeProvider>
+    <div style={{ padding: '2rem' }}>
+      <Loading></Loading>
+    </div>
   )
 }
 
