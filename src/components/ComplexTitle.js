@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from './util'
 
 const ComplexTitle = (props) => {
   console.log('props value : ', props)
@@ -20,7 +21,7 @@ const Wrapper = styled(ComplexTitle)`
   div {
     height: 0.5rem;
     width: 0.5rem;
-    background: var(--primary);
+    background: ${colors};
   }
 `
 
