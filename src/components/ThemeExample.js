@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import styled, { ThemeProvider } from 'styled-components'
-import GlobalStyle from './components/GlobalStyle'
+import GlobalStyles from './global-styles'
 
 const BaseTheme = {
   color: '#222',
@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <ThemeProvider theme={baseTheme ? BaseTheme : DarkTheme}>
-      <GlobalStyle />
+      <GlobalStyles />
       <Container>
         <h1>hello world</h1>
         <button className='btn' onClick={toggleTheme}>
