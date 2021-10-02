@@ -2,7 +2,8 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 
 const Button = styled.button.attrs((props) => {
-  return { type: props.type || 'button' }
+  // adding attribute
+  return { type: props.type || 'button' } //** here we are setting a common attribute value ‘button’ || ‘submit’ based on the input type.
 })`
   background: var(--btn-background);
   border: none;
@@ -10,6 +11,8 @@ const Button = styled.button.attrs((props) => {
   padding: 0.25rem;
   cursor: pointer;
   ${({ type }) => {
+    // applying styles based on the attribute value
+    //** here we are using css helper function + applying value based condition checking to apply the style.
     return (
       type === 'submit' &&
       css`
@@ -24,6 +27,7 @@ const Button = styled.button.attrs((props) => {
 
 const BasicInput = styled.input.attrs((props) => {
   return {
+    //**here we are learning : how to add more than 1 attribute dynamically
     type: props.type || 'text',
     placeholder: props.placeholder || 'please enter value',
   }
