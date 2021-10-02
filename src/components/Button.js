@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components/macro'
 
 export const DefaultButton = styled.button`
   background-color: blue;
@@ -7,7 +7,19 @@ export const DefaultButton = styled.button`
   border-radius: 0.25rem;
   cursor: pointer;
   text-transform: capitalize;
-  padding: 0.25rem;
+  ${({ larger }) =>
+    larger
+      ? css`
+          padding: 2rem;
+          font-size: 1.5rem;
+          font-weight: 700;
+        `
+      : css`
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: 400;
+        `}
+  padding: ${({ larger }) => larger && '2rem'};
   display: block;
   width: 200px;
   margin: 1rem auto;
